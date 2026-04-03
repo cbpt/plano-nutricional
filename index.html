@@ -1184,13 +1184,8 @@ function showDay(id, btn) {
   document.querySelectorAll('.day-pill').forEach(b => b.classList.remove('active'));
   document.getElementById('day-' + displayDay).classList.add('active');
   
-  // Highlight both the clicked button and the target day button
+  // Only highlight the clicked button
   btn.classList.add('active');
-  
-  if (id !== displayDay) {
-    const targetButton = Array.from(document.querySelectorAll('.day-pill')).find(b => b.getAttribute('onclick').includes("'" + displayDay + "'"));
-    if (targetButton) targetButton.classList.add('active');
-  }
   
   currentDay = id;
   // scroll to top of content
