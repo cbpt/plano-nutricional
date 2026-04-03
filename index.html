@@ -1184,12 +1184,14 @@ function showDay(id, btn) {
   document.querySelectorAll('.day-pill').forEach(b => b.classList.remove('active'));
   document.getElementById('day-' + displayDay).classList.add('active');
   
-  // Highlight the actual day being displayed
-  const buttonToHighlight = id !== displayDay 
-    ? Array.from(document.querySelectorAll('.day-pill')).find(b => b.getAttribute('onclick').includes("'" + displayDay + "'"))
-    : btn;
+  // Highlight both the clicked button and the target day button
+  btn.classList.add('active');
   
-  if (buttonToHighlight) buttonToHighlight.classList.add('active');
+  if (id !== displayDay) {
+    const targetButton = Array.from(document.querySelectorAll('.day-pill')).find(b => b.getAttribute('onclick').includes("'" + displayDay + "'"));
+    if (targetButton) targetButton.classList.add('active');
+  }
+  
   currentDay = id;
   // scroll to top of content
   window.scrollTo({ top: 0, behavior: 'smooth' });
