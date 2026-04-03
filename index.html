@@ -1172,10 +1172,24 @@ function switchView(view, btn) {
 let currentDay = 'seg';
 
 function showDay(id, btn) {
+  // Redirect certain days to others
+  const dayMap = {
+    'qui': 'ter',  // Thursday → Tuesday
+    'sex': 'qua'   // Friday → Wednesday
+  };
+  
+  const displayDay = dayMap[id] || id;
+  
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.day-pill').forEach(b => b.classList.remove('active'));
-  document.getElementById('day-' + id).classList.add('active');
-  btn.classList.add('active');
+  document.getElementById('day-' + displayDay).classList.add('active');
+  
+  // Highlight the actual day being displayed
+  const buttonToHighlight = id !== displayDay 
+    ? Array.from(document.querySelectorAll('.day-pill')).find(b => b.getAttribute('onclick').includes("'" + displayDay + "'"))
+    : btn;
+  
+  if (buttonToHighlight) buttonToHighlight.classList.add('active');
   currentDay = id;
   // scroll to top of content
   window.scrollTo({ top: 0, behavior: 'smooth' });
