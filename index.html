@@ -1216,7 +1216,7 @@ document.addEventListener('touchend', e => {
 
 // ── INIT: show today's day ──
 (function() {
-  const map = [null,'seg','ter','qua','qui','sex','sab','dom'];
+  const map = ['dom','seg','ter','qua','qui','sex','sab'];
   const d = new Date().getDay();
   const dayId = map[d];
   if (dayId) {
