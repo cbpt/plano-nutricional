@@ -493,6 +493,10 @@ body::before {
   <!-- WEEK STRIP -->
   <div class="week-strip-wrap" id="weekStrip">
     <div class="week-strip">
+      <button class="day-pill" onclick="showDay('dom',this)">
+        <span class="day-name">Dom</span>
+        <div class="day-badges"><span class="dot-bike"></span></div>
+      </button>
       <button class="day-pill active" onclick="showDay('seg',this)">
         <span class="day-name">Seg</span>
         <div class="day-badges"><span class="dot-gym"></span></div>
@@ -516,10 +520,6 @@ body::before {
       <button class="day-pill" onclick="showDay('sab',this)">
         <span class="day-name">Sáb</span>
         <div class="day-badges"><span class="dot-rest"></span></div>
-      </button>
-      <button class="day-pill" onclick="showDay('dom',this)">
-        <span class="day-name">Dom</span>
-        <div class="day-badges"><span class="dot-bike"></span></div>
       </button>
     </div>
   </div>
