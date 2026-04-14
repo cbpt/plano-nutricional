@@ -478,7 +478,7 @@ body::before {
     <div class="header-inner">
       <div class="header-eyebrow">Plano Personalizado · 77kg · Porto</div>
       <div class="header-title">
-        O <span class="accent">REAL</span>
+        O <span class="accent">PLANO</span>
       </div>
     </div>
     <div class="stats-row">
@@ -493,10 +493,6 @@ body::before {
   <!-- WEEK STRIP -->
   <div class="week-strip-wrap" id="weekStrip">
     <div class="week-strip">
-      <button class="day-pill" onclick="showDay('dom',this)">
-        <span class="day-name">Dom</span>
-        <div class="day-badges"><span class="dot-bike"></span></div>
-      </button>
       <button class="day-pill active" onclick="showDay('seg',this)">
         <span class="day-name">Seg</span>
         <div class="day-badges"><span class="dot-gym"></span></div>
@@ -520,6 +516,10 @@ body::before {
       <button class="day-pill" onclick="showDay('sab',this)">
         <span class="day-name">Sáb</span>
         <div class="day-badges"><span class="dot-rest"></span></div>
+      </button>
+      <button class="day-pill" onclick="showDay('dom',this)">
+        <span class="day-name">Dom</span>
+        <div class="day-badges"><span class="dot-bike"></span></div>
       </button>
     </div>
   </div>
@@ -807,7 +807,7 @@ body::before {
             <div class="tcol"><div class="tdot blue"></div><div class="ttime">22:00</div><div class="tline"></div></div>
             <div class="meal-card blue">
               <div class="meal-label">🥋 Pós-Krav — Não Saltar!</div>
-              <div class="meal-body"><strong>Sopa</strong> (reidratação)<br><strong>Proteína:</strong> atum / sardinha / frango frio / ovos (3)<br><strong>2 fatias pão integral</strong> ou batata-doce (150g)<br>🐟 <strong>Ómega 3 2–3 caps</strong> · 🧲 <strong>Magnésio Malato 1 tab</strong><br>💤 <em>Antes de dormir: Ashwagandha 1 cap</em></div>
+              <div class="meal-body"><strong>Sopa da esposa</strong> (reidratação)<br><strong>Proteína:</strong> atum / sardinha / frango frio / ovos (3)<br><strong>2 fatias pão integral</strong> ou batata-doce (150g)<br>🐟 <strong>Ómega 3 2–3 caps</strong> · 🧲 <strong>Magnésio Malato 1 tab</strong><br>💤 <em>Antes de dormir: Ashwagandha 1 cap</em></div>
               <div class="mmacros"><span class="mm">Kcal <b>~480</b></span><span class="mm">P <b>~42g</b></span><span class="mm">C <b>~46g</b></span><span class="mm">G <b>~12g</b></span></div>
               <div class="meal-note warn">⚠️ Não saltes mesmo sendo tarde — após 2 treinos o corpo está em catabolismo</div>
             </div>
@@ -1079,7 +1079,275 @@ body::before {
       </div>
     </div><!-- /view-supl -->
 
-    <!-- ── REGRAS VIEW ── -->
+    <!-- ── TREINOS VIEW ── -->
+    <div class="tab-view" id="view-treinos">
+      <div class="section-title">Treino A — Corpo Inteiro</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:14px;">Halteres + Elíptica · 45 min · Segunda, Quarta, Sexta</div>
+
+      <div class="stack-note" style="background:rgba(200,245,66,.04);border-color:rgba(200,245,66,.2);margin-bottom:14px;">
+        <div class="stack-note-title" style="color:var(--lime);">⚡ Aquecimento — 7 min</div>
+        <div class="stack-note-body">
+          <strong>1 min</strong> — Jumping Jacks + Rotações tronco + Agachamentos sem peso<br>
+          <strong>5 min</strong> — Elíptica ritmo progressivo (último min mais intenso)<br>
+          <strong>1 min</strong> — Círculos de braço + Leg swings (8 cada perna)
+        </div>
+      </div>
+
+      <div class="supp-grid" style="grid-template-columns:1fr;gap:10px;">
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Incline Bench Press (Halteres)</span></div>
+          <div class="supp-dose">3 séries × 12–15 reps · 20kg · descanso 60seg</div>
+          <div class="supp-when">Descida 3 seg lenta · pausa 1 seg em baixo</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Single Arm Dumbbell Row</span></div>
+          <div class="supp-dose">3 séries × 10–12 reps cada braço · 10kg · descanso 45seg</div>
+          <div class="supp-when">Movimento lento 3–4 seg · não balançar o corpo</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Shoulder Press (Halteres)</span></div>
+          <div class="supp-dose">3 séries × 12–15 reps · 20kg · descanso 60seg</div>
+          <div class="supp-when">Descida controlada · não bloquear cotovelos no topo</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Romanian Deadlift (Halteres)</span></div>
+          <div class="supp-dose">3 séries × 20–28 reps · 20kg · descanso 60seg</div>
+          <div class="supp-when">Progressão de reps entre séries · costas direitas sempre</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Cable Twist (Up to Down)</span></div>
+          <div class="supp-dose">3–4 séries × 15 reps cada lado · 18–32kg progressivo</div>
+          <div class="supp-when">Reps lentas e controladas · rotação vem do core não dos braços</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🧘</span><span class="supp-name">Side Plank</span></div>
+          <div class="supp-dose">3 séries × 45 seg cada lado · última série ao máximo</div>
+          <div class="supp-when">Anca alinhada · não deixar cair para baixo</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🧘</span><span class="supp-name">Plank</span></div>
+          <div class="supp-dose">3 séries × 1 min · descanso 30seg</div>
+          <div class="supp-when">Core contraído · glúteos apertados · respiração controlada</div>
+        </div>
+
+        <div class="supp-card" style="border-color:rgba(200,245,66,.2);background:rgba(200,245,66,.04);">
+          <div class="supp-top"><span class="supp-icon">🚴</span><span class="supp-name">Elíptica — Retorno</span></div>
+          <div class="supp-dose">5 min a ritmo leve e constante</div>
+          <div class="supp-when">Baixar gradualmente frequência cardíaca · não parar abruptamente</div>
+        </div>
+
+      </div>
+
+      <div class="section-title">Treino B — Cardio + Peito + Core + Bíceps</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:14px;">Functional Trainer FS86 + Cardio · 45 min · Alternativa ao Treino A</div>
+
+      <div class="stack-note" style="background:rgba(66,200,245,.04);border-color:rgba(66,200,245,.2);margin-bottom:14px;">
+        <div class="stack-note-title" style="color:var(--blue);">💡 Quando usar o Treino B</div>
+        <div class="stack-note-body">
+          Usa quando a máquina de cabos ou halteres estiver ocupada, ou para variar. Nos dias de <strong>duplo treino com Krav Maga</strong> este treino é preferível — menos fadiga nas pernas para o treino da noite.
+        </div>
+      </div>
+
+      <div class="stack-note" style="background:rgba(200,245,66,.04);border-color:rgba(200,245,66,.2);margin-bottom:14px;">
+        <div class="stack-note-title" style="color:var(--lime);">⚡ Aquecimento — 7 min</div>
+        <div class="stack-note-body">
+          <strong>5 min</strong> — Remo ou Bicicleta indoor a ritmo moderado<br>
+          <strong>1 min</strong> — Rotações tronco + círculos braços<br>
+          <strong>1 min</strong> — Agachamentos sem peso
+        </div>
+      </div>
+
+      <div class="supp-grid" style="grid-template-columns:1fr;gap:10px;">
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Cable Chest Fly</span></div>
+          <div class="supp-dose">3 séries × 12–15 reps · polia ao nível do peito · descanso 45seg</div>
+          <div class="supp-when">Braços ligeiramente fletidos · movimento em arco · contrai peito no centro</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Cable Chest Press</span></div>
+          <div class="supp-dose">3 séries × 12–15 reps · banco inclinado · descanso 45seg</div>
+          <div class="supp-when">Polia atrás dos ombros · empurra para a frente e ligeiramente para baixo</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">💪</span><span class="supp-name">Cable Bicep Curl</span></div>
+          <div class="supp-dose">3 séries × 12–15 reps · barra curta · polia em baixo · descanso 45seg</div>
+          <div class="supp-when">Cotovelos fixos junto ao corpo · não balançar · contrai no topo</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">💪</span><span class="supp-name">Single Arm Cable Curl</span></div>
+          <div class="supp-dose">2 séries × 12 reps cada braço · polia em baixo · descanso 30seg</div>
+          <div class="supp-when">Alterna braços · movimento lento e controlado</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🧘</span><span class="supp-name">Cable Crunch</span></div>
+          <div class="supp-dose">3 séries × 15 reps · polia em cima · ajoelhado · descanso 45seg</div>
+          <div class="supp-when">Puxa com o core não com os braços · testa toca nos joelhos</div>
+        </div>
+
+        <div class="supp-card">
+          <div class="supp-top"><span class="supp-icon">🧘</span><span class="supp-name">Plank</span></div>
+          <div class="supp-dose">3 séries × 1 min · descanso 30seg</div>
+          <div class="supp-when">Core contraído · glúteos apertados · respiração controlada</div>
+        </div>
+
+        <div class="supp-card" style="border-color:rgba(66,200,245,.2);background:rgba(66,200,245,.04);">
+          <div class="supp-top"><span class="supp-icon">🚣</span><span class="supp-name">Remo — Cardio Final</span></div>
+          <div class="supp-dose">5 min ritmo médio-alto + 3 min bicicleta a desacelerar</div>
+          <div class="supp-when">Costas direitas no remo · puxa com as pernas não só os braços</div>
+        </div>
+
+      </div>
+    </div><!-- /view-treinos -->
+
+    <!-- ── RECEITAS VIEW ── -->
+    <div class="tab-view" id="view-receitas">
+      <div class="section-title">Receitas Rápidas</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:14px;">Todas em menos de 10 minutos · Ingredientes que já tens · Macros estimados</div>
+
+      <div class="subs-grid">
+
+        <div class="sub-card" onclick="toggleSub(this)">
+          <div class="sub-header">
+            <span class="sub-icon">🥣</span>
+            <span class="sub-title">Papa Proteica (P. Almoço)</span>
+            <span class="sub-chevron">▼</span>
+          </div>
+          <div class="sub-body">
+            <div class="sub-body-inner">
+              <div class="sub-item"><strong>Ingredientes:</strong> Skyr 200g + 1 Weetabix + 1 c.chá mel + 1 scoop Whey (opcional)</div>
+              <div class="sub-item"><strong>Preparação:</strong> Mistura tudo numa taça. O Weetabix absorve o Skyr e fica em papa cremosa. 2 minutos.</div>
+              <div class="sub-item"><strong>Macros:</strong> ~380 kcal · ~35g proteína · ~45g carbs · ~5g gordura</div>
+              <div class="sub-item"><strong>Dica:</strong> Adiciona mirtilos ou morangos por cima para variar sabor e adicionar antioxidantes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-card" onclick="toggleSub(this)">
+          <div class="sub-header">
+            <span class="sub-icon">🍳</span>
+            <span class="sub-title">Omelete Rápida (P. Almoço / Snack)</span>
+            <span class="sub-chevron">▼</span>
+          </div>
+          <div class="sub-body">
+            <div class="sub-body-inner">
+              <div class="sub-item"><strong>Ingredientes:</strong> 3 ovos + queijo flamengo 2 fatias + fiambre peru 2 fatias + sal e pimenta</div>
+              <div class="sub-item"><strong>Preparação:</strong> Bate os ovos, deita na frigideira antiaderente quente. Coloca queijo e fiambre a meio. Dobra. 4 minutos.</div>
+              <div class="sub-item"><strong>Macros:</strong> ~380 kcal · ~34g proteína · ~3g carbs · ~26g gordura</div>
+              <div class="sub-item"><strong>Dica:</strong> Serve com 1-2 fatias de pão integral para dias de treino</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-card" onclick="toggleSub(this)">
+          <div class="sub-header">
+            <span class="sub-icon">🐟</span>
+            <span class="sub-title">Atum Rápido (Almoço Escritório)</span>
+            <span class="sub-chevron">▼</span>
+          </div>
+          <div class="sub-body">
+            <div class="sub-body-inner">
+              <div class="sub-item"><strong>Ingredientes:</strong> 2 latas atum ao natural + 2 ovos cozidos + 3 tostas integrais + azeite + limão</div>
+              <div class="sub-item"><strong>Preparação:</strong> Abre as latas, escorre, tempera com azeite e limão. Ovos cozidos feitos em casa de manhã. Zero preparação no escritório.</div>
+              <div class="sub-item"><strong>Macros:</strong> ~480 kcal · ~50g proteína · ~30g carbs · ~14g gordura</div>
+              <div class="sub-item"><strong>Dica:</strong> Prepara os ovos cozidos na noite anterior — duram 3 dias no frigorífico</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-card" onclick="toggleSub(this)">
+          <div class="sub-header">
+            <span class="sub-icon">🍗</span>
+            <span class="sub-title">Marmita Frango + Arroz</span>
+            <span class="sub-chevron">▼</span>
+          </div>
+          <div class="sub-body">
+            <div class="sub-body-inner">
+              <div class="sub-item"><strong>Ingredientes:</strong> Frango grelhado 160g + arroz cozido 150g + legumes a gosto + azeite</div>
+              <div class="sub-item"><strong>Preparação:</strong> Grelha o frango temperado com sal, alho e limão. Junta arroz cozido e legumes. Mete na marmita. 5 min microondas no escritório.</div>
+              <div class="sub-item"><strong>Macros:</strong> ~520 kcal · ~48g proteína · ~55g carbs · ~10g gordura</div>
+              <div class="sub-item"><strong>Dica:</strong> Cozinha frango e arroz em quantidade ao domingo para a semana toda</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-card" onclick="toggleSub(this)">
+          <div class="sub-header">
+            <span class="sub-icon">🥪</span>
+            <span class="sub-title">Sandes Proteica (Snack 18h)</span>
+            <span class="sub-chevron">▼</span>
+          </div>
+          <div class="sub-body">
+            <div class="sub-body-inner">
+              <div class="sub-item"><strong>Ingredientes:</strong> 2 fatias pão integral + 3 fatias fiambre peru + 2 fatias queijo flamengo + tomate</div>
+              <div class="sub-item"><strong>Preparação:</strong> Monta a sandes. 1 minuto. Come com Skyr ao lado.</div>
+              <div class="sub-item"><strong>Macros:</strong> ~380 kcal · ~32g proteína · ~38g carbs · ~10g gordura</div>
+              <div class="sub-item"><strong>Dica:</strong> Nos dias de Krav Maga às 20h esta é a refeição pré-treino — come até às 18h30</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-card" onclick="toggleSub(this)">
+          <div class="sub-header">
+            <span class="sub-icon">🥗</span>
+            <span class="sub-title">Salada Proteica (Almoço / Jantar)</span>
+            <span class="sub-chevron">▼</span>
+          </div>
+          <div class="sub-body">
+            <div class="sub-body-inner">
+              <div class="sub-item"><strong>Ingredientes:</strong> Alface/rúcula + tomate cherry + atum 1 lata + ovo cozido 2 + azeite + limão + sal</div>
+              <div class="sub-item"><strong>Preparação:</strong> Mistura tudo numa tigela. 3 minutos.</div>
+              <div class="sub-item"><strong>Macros:</strong> ~320 kcal · ~38g proteína · ~8g carbs · ~14g gordura</div>
+              <div class="sub-item"><strong>Dica:</strong> Ótima para dias de descanso — proteína alta, carbs baixos, perfeito para o défice</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-card" onclick="toggleSub(this)">
+          <div class="sub-header">
+            <span class="sub-icon">🍳</span>
+            <span class="sub-title">Ovos com Sardinha (Jantar Rápido)</span>
+            <span class="sub-chevron">▼</span>
+          </div>
+          <div class="sub-body">
+            <div class="sub-body-inner">
+              <div class="sub-item"><strong>Ingredientes:</strong> 3 ovos + 1 lata sardinha ao natural + tomate + cebola + azeite</div>
+              <div class="sub-item"><strong>Preparação:</strong> Refoga cebola e tomate no azeite. Abre a lata de sardinha e junta. Parte os ovos por cima e mexe. 8 minutos.</div>
+              <div class="sub-item"><strong>Macros:</strong> ~420 kcal · ~40g proteína · ~6g carbs · ~26g gordura</div>
+              <div class="sub-item"><strong>Dica:</strong> Rico em ómega 3 natural — complementa o suplemento. Serve com pão integral.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-card" onclick="toggleSub(this)">
+          <div class="sub-header">
+            <span class="sub-icon">🥤</span>
+            <span class="sub-title">Shake Proteico Caseiro (Alternativa YoPro)</span>
+            <span class="sub-chevron">▼</span>
+          </div>
+          <div class="sub-body">
+            <div class="sub-body-inner">
+              <div class="sub-item"><strong>Ingredientes:</strong> Skyr 150g + 1 scoop Whey + leite 100ml + fruta a gosto + mel 1 c.chá</div>
+              <div class="sub-item"><strong>Preparação:</strong> Mistura tudo com colher ou batedor. 2 minutos.</div>
+              <div class="sub-item"><strong>Macros:</strong> ~350 kcal · ~42g proteína · ~30g carbs · ~5g gordura</div>
+              <div class="sub-item"><strong>Dica:</strong> Mais barato que o YoPro e com mais proteína. Sabor chocolate da Whey com mirtilos fica excelente.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /view-receitas -->
     <div class="tab-view" id="view-rules">
       <div class="section-title">Regras Base</div>
       <div class="tips-grid">
@@ -1138,6 +1406,14 @@ body::before {
       <span class="nav-icon">💊</span>
       <span class="nav-lbl">Suplementos</span>
     </button>
+    <button class="nav-btn" id="nav-treinos" onclick="switchView('treinos', this)">
+      <span class="nav-icon">🏋️</span>
+      <span class="nav-lbl">Treinos</span>
+    </button>
+    <button class="nav-btn" id="nav-receitas" onclick="switchView('receitas', this)">
+      <span class="nav-icon">🍽️</span>
+      <span class="nav-lbl">Receitas</span>
+    </button>
     <button class="nav-btn" id="nav-rules" onclick="switchView('rules', this)">
       <span class="nav-icon">📋</span>
       <span class="nav-lbl">Regras</span>
@@ -1166,6 +1442,7 @@ function switchView(view, btn) {
   } else {
     document.getElementById('view-' + view).classList.add('active');
   }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // ── DAY SWITCHING ──
@@ -1189,7 +1466,7 @@ function toggleSub(card) {
 }
 
 // ── SWIPE NAVIGATION ──
-const days = ['dom','seg','ter','qua','qui','sex','sab'];
+const days = ['seg','ter','qua','qui','sex','sab','dom'];
 let touchStartX = 0;
 let touchStartY = 0;
 
