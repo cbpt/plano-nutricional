@@ -817,20 +817,12 @@ body::before {
 
       <!-- QUINTA -->
       <div class="panel" id="day-qui">
-        <div class="redirect-card">
-          <div class="ri">📋</div>
-          <div class="rt">QUINTA = TERÇA</div>
-          <div class="rs">Dia de descanso — segue o plano da Terça-Feira</div>
-        </div>
+        <!-- Same content as Terça — loaded dynamically -->
       </div>
 
       <!-- SEXTA -->
       <div class="panel" id="day-sex">
-        <div class="redirect-card">
-          <div class="ri">📋</div>
-          <div class="rt">SEXTA = QUARTA</div>
-          <div class="rs">Duplo treino — segue o plano da Quarta-Feira</div>
-        </div>
+        <!-- Same content as Quarta — loaded dynamically -->
       </div>
 
       <!-- SÁBADO -->
@@ -1146,66 +1138,72 @@ body::before {
       </div>
 
       <div class="section-title">Treino B — Cardio + Peito + Core + Bíceps</div>
-      <div style="font-size:12px;color:var(--muted);margin-bottom:14px;">Functional Trainer FS86 + Cardio · 45 min · Alternativa ao Treino A</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:14px;">Functional Trainer FS86 + Cardio · 40–45 min · Alternativa ao Treino A</div>
 
       <div class="stack-note" style="background:rgba(66,200,245,.04);border-color:rgba(66,200,245,.2);margin-bottom:14px;">
         <div class="stack-note-title" style="color:var(--blue);">💡 Quando usar o Treino B</div>
         <div class="stack-note-body">
-          Usa quando a máquina de cabos ou halteres estiver ocupada, ou para variar. Nos dias de <strong>duplo treino com Krav Maga</strong> este treino é preferível — menos fadiga nas pernas para o treino da noite.
+          Usa quando halteres estiverem ocupados ou para variar. <strong>Não usar nos dias de Krav Maga</strong> — o Krav já trabalha muito peito e bíceps com socos. Nesses dias usa o Treino A.
         </div>
       </div>
 
       <div class="stack-note" style="background:rgba(200,245,66,.04);border-color:rgba(200,245,66,.2);margin-bottom:14px;">
-        <div class="stack-note-title" style="color:var(--lime);">⚡ Aquecimento — 7 min</div>
+        <div class="stack-note-title" style="color:var(--lime);">⏱️ Cronograma — 40 min</div>
         <div class="stack-note-body">
-          <strong>5 min</strong> — Remo ou Bicicleta indoor a ritmo moderado<br>
-          <strong>1 min</strong> — Rotações tronco + círculos braços<br>
-          <strong>1 min</strong> — Agachamentos sem peso
+          <strong>0–5 min</strong> — Aquecimento Elíptica/Remo<br>
+          <strong>5–15 min</strong> — Superset Peito (Chest Fly + Chest Press)<br>
+          <strong>15–25 min</strong> — Superset Bíceps (Curl barra + Single Arm)<br>
+          <strong>25–35 min</strong> — Core (Cable Crunch + Plank)<br>
+          <strong>35–40 min</strong> — Cardio Final Remo
+        </div>
+      </div>
+
+      <div class="stack-note" style="background:rgba(245,166,35,.04);border-color:rgba(245,166,35,.2);margin-bottom:14px;">
+        <div class="stack-note-title" style="color:var(--orange);">🔁 O que é um Superset</div>
+        <div class="stack-note-body">
+          Dois exercícios seguidos <strong>sem descanso entre eles</strong>. Só descansas depois de completares os dois. Poupa tempo e mantém intensidade alta.
         </div>
       </div>
 
       <div class="supp-grid" style="grid-template-columns:1fr;gap:10px;">
 
-        <div class="supp-card">
-          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Cable Chest Fly</span></div>
-          <div class="supp-dose">3 séries × 12–15 reps · polia ao nível do peito · descanso 45seg</div>
-          <div class="supp-when">Braços ligeiramente fletidos · movimento em arco · contrai peito no centro</div>
+        <div class="supp-card" style="border-color:rgba(200,245,66,.2);background:rgba(200,245,66,.04);">
+          <div class="supp-top"><span class="supp-icon">🚴</span><span class="supp-name">Aquecimento — 5 min</span></div>
+          <div class="supp-dose">Elíptica ou Remo · ritmo progressivo</div>
+          <div class="supp-when">Último minuto mais intenso · depois rotações tronco + círculos braços</div>
         </div>
 
-        <div class="supp-card">
-          <div class="supp-top"><span class="supp-icon">🏋️</span><span class="supp-name">Cable Chest Press</span></div>
-          <div class="supp-dose">3 séries × 12–15 reps · banco inclinado · descanso 45seg</div>
-          <div class="supp-when">Polia atrás dos ombros · empurra para a frente e ligeiramente para baixo</div>
+        <div class="supp-card" style="border-color:rgba(66,200,245,.2);">
+          <div class="supp-top"><span class="supp-icon">🔁</span><span class="supp-name">SUPERSET 1 — Peito · 10 min</span></div>
+          <div class="supp-dose">
+            <strong>A)</strong> Cable Chest Fly — 3 × 12 reps · polia ao nível do peito<br>
+            <strong>B)</strong> Cable Chest Press — 3 × 12 reps · banco inclinado<br>
+          </div>
+          <div class="supp-when">A → B sem pausa · descanso 45seg após B · repete 3 vezes</div>
         </div>
 
-        <div class="supp-card">
-          <div class="supp-top"><span class="supp-icon">💪</span><span class="supp-name">Cable Bicep Curl</span></div>
-          <div class="supp-dose">3 séries × 12–15 reps · barra curta · polia em baixo · descanso 45seg</div>
-          <div class="supp-when">Cotovelos fixos junto ao corpo · não balançar · contrai no topo</div>
+        <div class="supp-card" style="border-color:rgba(66,200,245,.2);">
+          <div class="supp-top"><span class="supp-icon">🔁</span><span class="supp-name">SUPERSET 2 — Bíceps · 10 min</span></div>
+          <div class="supp-dose">
+            <strong>A)</strong> Cable Bicep Curl barra — 3 × 12 reps · polia em baixo<br>
+            <strong>B)</strong> Single Arm Cable Curl — 3 × 10 reps cada braço<br>
+          </div>
+          <div class="supp-when">A → B sem pausa · descanso 45seg após B · cotovelos fixos sempre</div>
         </div>
 
-        <div class="supp-card">
-          <div class="supp-top"><span class="supp-icon">💪</span><span class="supp-name">Single Arm Cable Curl</span></div>
-          <div class="supp-dose">2 séries × 12 reps cada braço · polia em baixo · descanso 30seg</div>
-          <div class="supp-when">Alterna braços · movimento lento e controlado</div>
+        <div class="supp-card" style="border-color:rgba(66,200,245,.2);">
+          <div class="supp-top"><span class="supp-icon">🔁</span><span class="supp-name">SUPERSET 3 — Core · 10 min</span></div>
+          <div class="supp-dose">
+            <strong>A)</strong> Cable Crunch — 3 × 15 reps · polia em cima · ajoelhado<br>
+            <strong>B)</strong> Plank — 3 × 1 min<br>
+          </div>
+          <div class="supp-when">A → B sem pausa · descanso 30seg após B · core contraído sempre</div>
         </div>
 
-        <div class="supp-card">
-          <div class="supp-top"><span class="supp-icon">🧘</span><span class="supp-name">Cable Crunch</span></div>
-          <div class="supp-dose">3 séries × 15 reps · polia em cima · ajoelhado · descanso 45seg</div>
-          <div class="supp-when">Puxa com o core não com os braços · testa toca nos joelhos</div>
-        </div>
-
-        <div class="supp-card">
-          <div class="supp-top"><span class="supp-icon">🧘</span><span class="supp-name">Plank</span></div>
-          <div class="supp-dose">3 séries × 1 min · descanso 30seg</div>
-          <div class="supp-when">Core contraído · glúteos apertados · respiração controlada</div>
-        </div>
-
-        <div class="supp-card" style="border-color:rgba(66,200,245,.2);background:rgba(66,200,245,.04);">
-          <div class="supp-top"><span class="supp-icon">🚣</span><span class="supp-name">Remo — Cardio Final</span></div>
-          <div class="supp-dose">5 min ritmo médio-alto + 3 min bicicleta a desacelerar</div>
-          <div class="supp-when">Costas direitas no remo · puxa com as pernas não só os braços</div>
+        <div class="supp-card" style="border-color:rgba(200,245,66,.2);background:rgba(200,245,66,.04);">
+          <div class="supp-top"><span class="supp-icon">🚣</span><span class="supp-name">Cardio Final — 5 min</span></div>
+          <div class="supp-dose">Remo a ritmo médio os primeiros 3 min · últimos 2 min leve para baixar FC</div>
+          <div class="supp-when">Não parar abruptamente · respiração controlada</div>
         </div>
 
       </div>
@@ -1449,12 +1447,21 @@ function switchView(view, btn) {
 let currentDay = 'seg';
 
 function showDay(id, btn) {
+  // Mirror days
+  const mirrors = { 'qui': 'ter', 'sex': 'qua' };
+  if (mirrors[id]) {
+    const sourceId = mirrors[id];
+    document.getElementById('day-' + id).innerHTML = document.getElementById('day-' + sourceId).innerHTML;
+    // Fix title for mirrored days
+    const titles = { 'qui': ['QUINTA / SÁBADO', 'DESCANSO'], 'sex': ['SEXTA','GYM + KRAV MAGA'] };
+    const titleEl = document.querySelector('#day-' + id + ' .day-title');
+    if (titleEl && titles[id]) titleEl.innerHTML = titles[id][0] + '<br>' + titles[id][1];
+  }
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.day-pill').forEach(b => b.classList.remove('active'));
   document.getElementById('day-' + id).classList.add('active');
   btn.classList.add('active');
   currentDay = id;
-  // scroll to top of content
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
